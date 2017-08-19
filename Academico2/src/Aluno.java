@@ -6,6 +6,7 @@ public class Aluno {
 	private String RA;
 	private String sexo;
 	private LocalDate dataNascimento;
+
 	
 	
 	
@@ -15,9 +16,10 @@ public class Aluno {
 		RA = rA;
 		this.sexo = sexo;
 		this.dataNascimento = dataNascimento;
-		
-		
+
 	}
+		
+		
 	@Override
 	public String toString() {
 		return "Aluno [nome: " + nome + ", RA: " + RA + ", sexo: " + sexo + ", dataNascimento: " + getDataNascimentoComoString() + "]";
@@ -27,10 +29,11 @@ public class Aluno {
 	public String getDataNascimentoComoString(){
 		return dataNascimento.getDayOfMonth() + "/" +
 				dataNascimento.getMonthValue() + "/" +
-				dataNascimento.getYear() + "/";
+				dataNascimento.getYear();
 	}
 	
 	//Métodos get e set
+	
 	public String getNome() {
 		return nome;
 	}
@@ -55,5 +58,6 @@ public class Aluno {
 	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
+
 	
 }
