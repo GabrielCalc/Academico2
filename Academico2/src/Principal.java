@@ -1,15 +1,12 @@
+import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Calendar dataNascimento= Calendar.getInstance();
-		dataNascimento.set(Calendar.YEAR, 2000);
-		dataNascimento.set(Calendar.MONTH, Calendar.MAY);
-		dataNascimento.set(Calendar.DAY_OF_MONTH, 9);
 		
-		Aluno a1 = new Aluno ("Gabriel Gago", "21708493", "M", dataNascimento);
+		Aluno a1 = new Aluno ("Gabriel Gago", "21708493", "M", LocalDate.of(2000, 4, 9));
 		System.out.println(a1);
 		
 		Disciplina d1 = new Disciplina ("LTP1", "Ciência da computação", 75);
